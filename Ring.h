@@ -66,7 +66,7 @@ public:
     void reshuffle(){
         int i=0;
         while(i!=NUM_BALLS){
-            if(basering[i].color!=BLACK)
+            if(basering[i].color!=BLACK&&basering[i].texture.basetex!=NULL)
                 basering[i].randomize();
             i++;
         }
